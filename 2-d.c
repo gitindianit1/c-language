@@ -70,4 +70,38 @@ printf("\n%1.f",y[1][2]);
     return 0;
 }
 
+/* Array user defined value:- */
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    printf("1. Multi-Dimensional ARRAY CONCEPTS\n");
+    printf("----------------------\n");
+
+    int n,m;
+    printf("\nEnter array Rows and columns\n");
+    // n => rows and m => column
+    scanf("%d%d",&n,&m);
+    int arr[n][m];
+
+    for (int i= 0;i<n;i++){
+        for(int j=0;j<m;j++){
+            int ele;
+            printf("Enter an element\n");
+            scanf("%d",&ele);
+            arr[i][j]=ele;
+        }
+    }
+
+    printf("Print Array Element:- \n");
+    for (int i= 0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
 
